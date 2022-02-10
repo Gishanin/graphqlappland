@@ -8,6 +8,8 @@ gem 'pg', '>= 0.18', '< 2.0'
 gem 'puma', '~> 3.11'
 gem 'graphql'
 gem 'bootsnap', '>= 1.1.0', require: false
+gem 'apollo_upload_server', '2.1.0'
+gem 'pry'
 
 group :development, :test do
   gem 'graphiql-rails'
