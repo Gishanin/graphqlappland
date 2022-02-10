@@ -13,7 +13,7 @@ module Mutations
       @json_file = JSON.parse(file)
 
       @response = {}
-      @response[:name] = @json_file["metadata"]["name"] if input[:metadata]
+      @response[:name] = @json_file["metadata"]["name"] if input[:need_name]
 
       search_classes(input[:package_name]) if (input[:package_name])
       search_event(input[:event_sql]) if (input[:event_sql])
